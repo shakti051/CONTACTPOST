@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal" android:id="@+id/l1"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Contact"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="32dp"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Person Name"
+        android:layout_below="@id/l1"
+        android:id="@+id/etPName"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+    <EditText
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Registration"
+        android:layout_below="@id/etPName"
+        android:id="@+id/etRegistration"
+        />
+
+    <EditText
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Mobile"
+        android:layout_below="@id/etRegistration"
+        android:id="@+id/etMobile"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Landline"
+        android:layout_below="@id/etMobile"
+        android:id="@+id/etLandline"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/etLandline"
+        android:id="@+id/etEmail"
+        />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:textSize="18sp"
+        android:layout_below="@+id/etEmail"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="32dp"
+        android:id="@+id/btnContactSave"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:textSize="18sp"
+        android:layout_below="@+id/etEmail"
+        android:layout_toStartOf="@id/btnContactSave"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="32dp"
+        />
+
+</RelativeLayout>
